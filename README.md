@@ -1,29 +1,22 @@
-## Flutter e-commerce Application UI Design and Animation
+# flutter_emoney_app
 
-A part of #flutter100daysofcode. Let's create a beautiful and animated e-commerce UI with Flutter.
+| Onboarding Page     | Home Page      |  
+| ------------- | -------------    | 
+| [![Screenshot-1646204144.png](https://i.postimg.cc/J7c6XGx8/Screenshot-1646204144.png)](https://postimg.cc/Z0nxtYXs) | [![Screenshot-1646204148.png](https://i.postimg.cc/zXzdF82g/Screenshot-1646204148.png)](https://postimg.cc/PN7ztsjX)  |
 
-[Watch it on Youtube](https://youtu.be/_10i7_xsthM)
+Font use in this App Concept : [Rowdies Font](https://fonts.google.com/specimen/Rowdies?preview.size=38&query=rowdies) & [Source Serif Font](https://fonts.google.com/specimen/Source+Serif+Pro?preview.size=38&query=source+serif)
 
+A new Flutter project.
 
-## Previous Designs
-[Checkout my Youtube channel](https://youtube.com/afgprogrammer)
+## Getting Started
 
-<br>
+This project is a starting point for a Flutter application.
 
-## Development Setup
-Clone the repository and run the following commands:
-```
-flutter pub get
-flutter run
-```
+A few resources to get you started if this is your first Flutter project:
 
-## ScreenShot
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-<img src="assets/screenshot/one.png" height="500em" />&nbsp;<img src="assets/screenshot/two.png" height="500em" />
-
-## Links
-
-* [Website](https://afgprogrammer.com)
-* [Youtube channel](https://youtube.com/afgprogrammer)
-* [Twitter](https://twitter.com/afgprogrammer)
-* [Instagram](https://instagram.com/afgprogrammer)
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
