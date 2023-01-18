@@ -1,81 +1,13 @@
-<h1 align="center">
-  A Calculator App
-</h1>
+# coffee_shop_ui
 
-<p align="center">
-<img src='readme_assets/icon-512x512.png' align="center" width=300>
-</p>
+This is UI of coffee shop app<br>
+Original UI: https://s3-alpha.figma.com/hub/file/1362346522/544fa791-73fd-49be-8095-c23e05d73e57-cover.png
 
-<p align="center">
-  Be sure to ⭐ this repo so you can keep up to date on any daily progress!
-</p>
+## UI
 
-<br>
-<br>
-
-<center>
-
-![demo1](https://raw.githubusercontent.com/Abhijith14/Calculator-App/master/readme_assets/demo_w.png) &nbsp;&nbsp;&nbsp;&nbsp;
-![demo2](https://raw.githubusercontent.com/Abhijith14/Calculator-App/master/readme_assets/demo_b.png)
-
-</center>
-
-<br>
-<br>
-
-
-## 📕 Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Version Info
-
-_**Android Studio 4.1.1**_  
-_**Build #AI-201.8743.12.41.6953283, built on November 5, 2020**_  
-_**Runtime version: 1.8.0_242-release-1644-b01 amd64**_  
-_**VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o**_  
-_**Windows 10 10.0**_  
-_**GC: ParNew, ConcurrentMarkSweep**_  
-_**Memory: 1237M**_  
-_**Cores: 12**_  
-
-
-### Installing Setup
-
-
-```
-Open the "FINAL_APK" folder.
-Run the app-release.apk in your Emulator or Android Device
-```
-
-<br>
-
-## 🔧 Cloning to Android Studio
-
-### Deployment
-
-After clonning [this repo](https://github.com/Abhijith14/Calculator-App.git), run app.
-
-### Built With
-
-* [Canva](https://www.canva.com/) - Designing
-* [Android Studio 4.1.1](https://developer.android.com/studio) - Developing Project
-
-
-### Authors
-
-* **Abhijith Udayakumar** - *Design & Development* - [Abhijith14](https://github.com/Abhijith14)
-
-<br>
-<br>
-
-## 🚨 Forking this repo (please read!)
-
-_**yes, with attribution**_.
-
-I value keeping my work open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my work without giving me credit. I spent a non-trivial amount of effort building and designing this project, and I am proud of it! All I ask of you all is to not claim this effort as your own.
-
-
-### TL;DR
-
-Yes, you can fork this repo. Please give me proper credit by linking back to [Abhijith14/Calculator-App](https://github.com/Abhijith14/Calculator-App). Thanks!
+<div>
+  <img src="https://user-images.githubusercontent.com/93490214/160264343-ac3d30a9-6ef1-4e8b-a9f4-4744121c7076.jpg" width="200" height="411"/>
+  <img src="https://user-images.githubusercontent.com/93490214/160264350-ff258ee6-41f8-45fb-9b49-03529ee125ca.jpg" width="200" height="411"/>
+  <img src="https://user-images.githubusercontent.com/93490214/160264353-951d085c-d783-4e23-b64a-d8779d60095d.jpg" width="200" height="411"/>
+  <img src="https://user-images.githubusercontent.com/93490214/160264349-2420a04a-54d8-484a-bcb1-0a068646ea1a.jpg" width="200" height="411"/>
+</div>
