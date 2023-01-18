@@ -1,23 +1,33 @@
-import 'package:coffee_shop/screens/home_page.dart';
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:developer';
 
-void main() {
-  runApp(const MyApp());
+import 'package:bloc/bloc.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/widgets.dart';
+
+import 'package:testapp/app/app.dart';
+import 'package:testapp/app/app_bloc_observer.dart';
+
+import 'data/repositories/authentication_repository.dart';
+
+
+Future<void> main() async {
+  Bloc.observer = AppBlocObserver();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  final authenticationRepository = AuthenticationRepository();
+  await authenticationRepository.user.first;
+  FlutterError.onError = (details) {
+    log(details.exceptionAsString(), stackTrace: details.stack);
+  };
+
+  runZonedGuarded(
+    () => runApp(App(
+      connectivity: Connectivity(),
+      authenticationRepository: authenticationRepository,
+    )),
+    (error, stackTrace) => log(error.toString(), stackTrace: stackTrace),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Coffee Shop',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: "Lora",
-      ),
-      home: const HomePage(),
-    );
-  }
-}

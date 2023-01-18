@@ -1,13 +1,34 @@
-# coffee_shop_ui
+# Counter App - Android/IOS App
 
-This is UI of coffee shop app<br>
-Original UI: https://s3-alpha.figma.com/hub/file/1362346522/544fa791-73fd-49be-8095-c23e05d73e57-cover.png
+Small mobile application made for educational purposes.
 
-## UI
+Functionality:
+* Login/Register user
+* Sign in with google
+* Counter which detects internet connection (wifi - increment, mobile data - decrement)
 
-<div>
-  <img src="https://user-images.githubusercontent.com/93490214/160264343-ac3d30a9-6ef1-4e8b-a9f4-4744121c7076.jpg" width="200" height="411"/>
-  <img src="https://user-images.githubusercontent.com/93490214/160264350-ff258ee6-41f8-45fb-9b49-03529ee125ca.jpg" width="200" height="411"/>
-  <img src="https://user-images.githubusercontent.com/93490214/160264353-951d085c-d783-4e23-b64a-d8779d60095d.jpg" width="200" height="411"/>
-  <img src="https://user-images.githubusercontent.com/93490214/160264349-2420a04a-54d8-484a-bcb1-0a068646ea1a.jpg" width="200" height="411"/>
-</div>
+## Technologies:
+
+<a href="https://flutter.dev/" title="Flutter"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/flutter.svg" alt="Flutter" width="30px" height="30px"></a>
+<a href="https://dart.dev/" title="Dart"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/dart.svg" alt="Dart" width="30px" height="30px"></a>
+<a href="https://www.firebase.com/" title="Firebase"><img src="https://github.com/get-icon/geticon/raw/master/icons/firebase.svg" alt="Firebase" width="30px" height="30px"></a>
+
+Flutter is an open source framework by Google for building natively compiled, multi-platform applications from a single codebase.
+
+## Screenshots
+
+<p float="left" align="middle">
+<img src="https://user-images.githubusercontent.com/85311656/161097992-6bbc216c-ed5d-4904-b0c6-b2888c21caa5.png" 
+width="200"
+    hspace="10" vspace="10">
+<img src="https://user-images.githubusercontent.com/85311656/161098012-bc2fcac9-1aa2-4453-9460-b887501bc68b.png" 
+width="200"
+    hspace="10" vspace="10">
+  <img src="https://user-images.githubusercontent.com/85311656/161098020-02236cdf-9fd2-4824-9c05-218c9e5126bc.png"
+width="200"
+    hspace="10" vspace="10">
+    
+
+</p>
+    
+
