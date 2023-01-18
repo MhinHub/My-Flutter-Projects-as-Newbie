@@ -1,6 +1,6 @@
 {
-    "name": "music_app_ui",
-    "short_name": "music_app_ui",
+    "name": "fita_audio_player",
+    "short_name": "fita_audio_player",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

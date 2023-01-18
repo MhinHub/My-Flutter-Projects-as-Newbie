@@ -1,35 +1,29 @@
+import 'package:fita_audio_player/models/Music.dart';
+import 'package:fita_audio_player/pages/wrapper_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get_it/get_it.dart';
-import 'package:music_app_ui/util/navigation/navigation_service.dart';
-import 'package:music_app_ui/util/navigation/routes.dart';
-import 'package:music_app_ui/util/navigation/screen_router.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-import 'di/service_locator.dart';
+Future<void> main() async {
+  Hive.registerAdapter<Music>(MusicAdapter());
+  await Hive.initFlutter();
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  await ServiceLocator().setUp();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: const Size(375, 812),
-      builder: () => MaterialApp(
-        title: 'Music App Ui',
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(new FocusNode()),
+      child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(),
-        themeMode: ThemeMode.light,
-        navigatorKey: GetIt.I.get<NavigationService>().navigatorKey,
-        initialRoute: Routes.initial,
-        onGenerateRoute: ScreenRouter.generateRoute,
+        title: 'Music Player',
+        home: WrapperApp(),
       ),
     );
   }

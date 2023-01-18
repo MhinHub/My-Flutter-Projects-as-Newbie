@@ -1,72 +1,88 @@
-# Music App UI
+# Music Player
 
-A music app template
+<div align="center">
 
+![This is an image](https://i.ibb.co/jLfT0qP/mockup-music-player.png)
+See app on [Figma](https://www.figma.com/file/td0pomRUmXRWHeXCvgPOzO/Music-Player?node-id=0%3A1)
 
+</div>
 
-<br />
+## Description
+This repository is source code of music player, build with languade dart on framework flutter with api from itunes.
 
-## ✨ Requirements
+## Requirement Device
+- Operation System : Windows
+- Flutter : 2.10.2
+- Dart : 2.16.1
+- Mobile Device : Vivo V11 Pro
+- Mobile Operation System : Android
+- Android Version : 10
 
-- Any Operating System (ie. MacOS X, Linux, Windows)
-- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-- A little knowledge of Dart and Flutter
-- A brain to think 🤓🤓
+## Support Features
+- Popular artist
+- Search music
+- Save music from popular artist
+- Save music from search
+- Play music by artist
+- Play music by search
+- Play music by library
+- Pause music
+- Resume music
+- Previous music
+- Next music
+- Slide music player to stop music
+- Slide saved music to remove it
 
-## build apk
-flutter build apk
+## Run project
+- Clone respository
+```bash
+git clone https://github.com/zeetec20/flutter_music_player.git
+```
+- Open repository
+```bash
+cd flutter_music_player
+```
+- Run command
+```bash
+flutter pub get
+flutter run
+```
 
-<br />
+## Build app
+- Clone respository
+```bash
+git clone https://github.com/zeetec20/flutter_music_player.git
+```
+- Open repository
+```bash
+cd flutter_music_player
+```
+- Run command
+```bash
+flutter pub get
+flutter build apk --release
+```
 
-## 📸 Banner
+## Deploy App
+- Generate keystore
+```bash
+# Linux
+keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 
-<p align="center">
-<img src="art/banner/banner.png" alt="splash.png" hspace="2"/>
-</p>
-
-<br />
-
-<br />
-
-## 📸 ScreenShots
-
-<p align="center">
-<img src="art/screenshots/splash.png" alt="splash.png" width="400px" hspace="2"/>
-<img src="art/screenshots/home.png" alt="home" width="400px" hspace="2"/>
-<img src="art/screenshots/search.png" alt="search" width="400px" hspace="2"/>
-<img src="art/screenshots/search_result.png" alt="search_result" width="400px" hspace="2"/>
-<img src="art/screenshots/playlist.png" alt="playlist" width="400px" hspace="2"/> 
-<img src="art/screenshots/playing_now.png" alt="playing_now" width="400px" hspace="2"/> 
-<img src="art/screenshots/saved.png" alt="saved" width="400px" hspace="2"/> 
-</p>
-
-<br />
-
-## 🤓 Design Credit
-
-**Victoria Okwuokenye**
-
-<a href="https://www.linkedin.com/in/victoria-okwuokenye/">
-<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>&nbsp;&nbsp;
-
-
-## 🤓 Author
-
-**Bukunmi Aluko**
-
-<a href="https://www.linkedin.com/in/bukunmi-aluko/">
-<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>&nbsp;&nbsp;
-
-<br />
-
-## 😃 Show some love ❤️😍😍
-
-Leave a 🌟
-
-Follow for update. 😃
-
-## Development version :hammer:
-- [APK (direct download)](https://github.com/bukunmialuko/FlutterMusicAppUI/releases/download/v1.0.2/app-release.apk)
+# Windows
+keytool -genkey -v -keystore c:\Users\USER_NAME\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+```
+- Reference the keystore
+```properties
+storePassword=<password from previous step>
+keyPassword=<password from previous step>
+keyAlias=upload
+storeFile=<location of the key store file, such as /Users/<user name>/upload-keystore.jks>
+```
+- Configure signing in [grandle](https://docs.flutter.dev/deployment/android#configure-signing-in-gradle)
+- Build appbundle
+```bash
+flutter run appbundle --release
+```
+- Upload appbundle to [Google Play Console](https://developer.android.com/studio/publish/upload-bundle)
 
