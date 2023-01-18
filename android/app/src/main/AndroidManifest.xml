@@ -1,11 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.dileepabandara.flutter_with_payhere"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.develogo.gamestore">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Flutter with PayHere"
+        android:label="Game Store"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher_2"
-        tools:replace="android:label">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"

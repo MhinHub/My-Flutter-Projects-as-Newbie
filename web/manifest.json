@@ -1,11 +1,11 @@
 {
-    "name": "flutter_with_payhere",
-    "short_name": "flutter_with_payhere",
+    "name": "carousel_slide",
+    "short_name": "carousel_slide",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "PayHere integration for the Flutter app.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
