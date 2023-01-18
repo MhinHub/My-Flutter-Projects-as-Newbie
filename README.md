@@ -1,34 +1,22 @@
-# Counter App - Android/IOS App
+# Complete Mobile Banking Template(Dark+Light Theme) built with ♥️ with Flutter 🔥
 
-Small mobile application made for educational purposes.
+Inspired by [Twinkle Creative](https://dribbble.com/shots/16369224-Banking-Mobile-App).
 
-Functionality:
-* Login/Register user
-* Sign in with google
-* Counter which detects internet connection (wifi - increment, mobile data - decrement)
-
-## Technologies:
-
-<a href="https://flutter.dev/" title="Flutter"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/flutter.svg" alt="Flutter" width="30px" height="30px"></a>
-<a href="https://dart.dev/" title="Dart"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/dart.svg" alt="Dart" width="30px" height="30px"></a>
-<a href="https://www.firebase.com/" title="Firebase"><img src="https://github.com/get-icon/geticon/raw/master/icons/firebase.svg" alt="Firebase" width="30px" height="30px"></a>
-
-Flutter is an open source framework by Google for building natively compiled, multi-platform applications from a single codebase.
-
-## Screenshots
-
-<p float="left" align="middle">
-<img src="https://user-images.githubusercontent.com/85311656/161097992-6bbc216c-ed5d-4904-b0c6-b2888c21caa5.png" 
-width="200"
-    hspace="10" vspace="10">
-<img src="https://user-images.githubusercontent.com/85311656/161098012-bc2fcac9-1aa2-4453-9460-b887501bc68b.png" 
-width="200"
-    hspace="10" vspace="10">
-  <img src="https://user-images.githubusercontent.com/85311656/161098020-02236cdf-9fd2-4824-9c05-218c9e5126bc.png"
-width="200"
-    hspace="10" vspace="10">
-    
-
+<p float="center">
+  <img src="https://github.com/martinoyovo/flutter-banking-app/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-01-18%20at%2003.22.23.png" width="190"/>
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-09-13%20at%2019.12.02.png" width="190"/>
+  <img src="https://github.com/martinoyovo/flutter-banking-app/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-01-18%20at%2003.22.11.png" width="190"/>
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-10-11%20at%2019.09.37.png" width="190"/>
+  <img src="https://github.com/martinoyovo/flutter-banking-app/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-01-18%20at%2003.22.27.png" width="190"/>
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-10-11%20at%2019.09.30.png" width="190"/>
+  <img src="https://github.com/martinoyovo/flutter-banking-app/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-01-18%20at%2003.31.07.png" width="190"/>
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-10-11%20at%2019.09.48.png" width="190"/>
+  <img src="https://raw.githubusercontent.com/martinoyovo/flutter-banking-app/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-10-11%20at%2019.09.52.png" width="190"/>
 </p>
-    
 
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

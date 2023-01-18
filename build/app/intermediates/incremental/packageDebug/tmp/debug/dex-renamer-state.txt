@@ -1,0 +1,4 @@
+#Sat Mar 26 13:46:12 WITA 2022
+base.0=/media/mi/Home/Coding/_Flutter/digital-banking-app-mobile-side-main/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

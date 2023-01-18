@@ -1,33 +1,33 @@
-import 'dart:async';
-import 'dart:developer';
+import 'package:flutter/material.dart';
+import 'package:flutter_banking_app/utils/styles.dart';
+import 'package:flutter_banking_app/view_models/view_models.dart';
+import 'package:flutter_banking_app/widgets/bottom_nav.dart';
+import 'package:provider/provider.dart';
 
-import 'package:bloc/bloc.dart';
-import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/widgets.dart';
-
-import 'package:testapp/app/app.dart';
-import 'package:testapp/app/app_bloc_observer.dart';
-
-import 'data/repositories/authentication_repository.dart';
-
-
-Future<void> main() async {
-  Bloc.observer = AppBlocObserver();
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  final authenticationRepository = AuthenticationRepository();
-  await authenticationRepository.user.first;
-  FlutterError.onError = (details) {
-    log(details.exceptionAsString(), stackTrace: details.stack);
-  };
-
-  runZonedGuarded(
-    () => runApp(App(
-      connectivity: Connectivity(),
-      authenticationRepository: authenticationRepository,
-    )),
-    (error, stackTrace) => log(error.toString(), stackTrace: stackTrace),
-  );
+void main() {
+  runApp(const MyApp());
 }
 
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ViewModel())
+      ],
+      child: MaterialApp(
+        title: 'Flutter Banking App',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: 'DMSans',
+          primaryColor: Styles.primaryColor,
+          backgroundColor: Styles.primaryColor,
+        ),
+        home: const BottomNav(),
+      ),
+    );
+  }
+}
