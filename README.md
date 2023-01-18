@@ -1,239 +1,142 @@
-# Twitter clone in flutter
-A working Twitter clone written in Flutter using Firebase auth,realtime,firestore database and storage.
+# 📦 Flutter with PayHere
 
-## Screenshots
+![GitHub repo size](https://img.shields.io/github/repo-size/dileepabandara/flutter_with_payhere?color=red&label=repository%20size)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dileepabandara/flutter_with_payhere?color=red)
+![GitHub language count](https://img.shields.io/github/languages/count/dileepabandara/flutter_with_payhere)
+![GitHub top language](https://img.shields.io/github/languages/top/dileepabandara/flutter_with_payhere)
+![GitHub](https://img.shields.io/github/license/dileepabandara/flutter_with_payhere?color=yellow)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/dileepabandara/flutter_with_payhere?color=brightgreen&label=commits)
 
-Welcome Page               |  Login Page               | Signup Page               |  Forgot Password Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Auth/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Auth/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Auth/screenshot_3.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Auth/screenshot_4.jpg?raw=true)|
+![Flutter with PayHere](https://dileepabandara.github.io/public-images/projects/flutter-with-payhere/flutter_with_payhere_preview.png)
 
-Home Page Sidebaar         |  Home Page       |   Home Page               |  Home Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Home/screenshot_5.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Home/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Home/screenshot_7.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Home/screenshot_6.jpg?raw=true)|
+## ✨ About
 
-Compose Tweet Page                  | Reply To Tweet       |   Reply to Tweet      |     Compose Retweet with comment
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/CreateTweet/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/CreateTweet/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/CreateTweet/screenshot_4.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/CreateTweet/screenshot_3.jpg?raw=true)|
+This **Flutter with PayHere** project is an example of how a flutter application can be integrated with PayHere. It includes PayHere integration with a One-Time Payment Request, a Recurring Payment Request, and a Preapproval Request for the Flutter app. **This project has been developed as an open source project for educational purposes.**
 
-Tweet Detail Page         |  Tweet Thread              |   Nested Tweet Thread     | Tweet options
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_3.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_4.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_2.jpg?raw=true)|
+### ❓ What is PayHere
 
-Notification Page         |  Notification Page         |   Notification Page       | Notification Setting Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Notification/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Notification/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Notification/screenshot_3.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Notification/screenshot_4.jpg?raw=true)|
+[PayHere](https://www.payhere.lk) is Sri Lanka's 1st Central Bank approved Aggregated Internet Payment Gateway Service that enables your business to conveniently accept Online Payments locally or globally from your customers all around the world. It's a single Online Payment Solution for Sri Lankan Businesses to get paid online via multiple local & global online payment methods available in Sri Lanka.
 
-Profile Page                |  Profile Page            |   Profile  Page       | Profile  Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Profile/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Profile/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Profile/screenshot_4.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Profile/screenshot_7.jpg?raw=true)|
+### 🖼️ Screenshots
 
-Select User Page                |  Chat Page            |    Chat Users List       | Conversation Info Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Chat/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Chat/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Chat/screenshot_3.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Chat/screenshot_4.jpg?raw=true)|
+![Sample Screenshot](https://dileepabandara.github.io/public-images/projects/flutter-with-payhere/flutter_with_payhere_screenshots_1.png)
 
-Search Page                |  Search Setting Page            |  Tweet Options - 1     | Tweet Options - 2
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Search/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Search/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_5.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_6.jpg?raw=true)|
+![Sample Screenshot](https://dileepabandara.github.io/public-images/projects/flutter-with-payhere/flutter_with_payhere_screenshots_2.png)
 
+## 🎬 Release Status
 
-Setting Page                |  Account Setting Page    |  Privacy Setting Page    | Privacy Settings Page
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_1.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_2.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_4.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_3.jpg?raw=true)|
+Version - Initial Release 1.0.0+1  
+Initial release date - 04/01/2022
 
-Content Prefrences Page      |  Display Setting Page    |  Data Settings Page    | Accessibility Settings
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_5.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_6.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_7.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_8.jpg?raw=true)|
+## 💡 Deployment
 
-  Users who likes Tweet        |  About Setting Page    |  Licenses Settings     |  Settings
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/TweetDetail/screenshot_7.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_9.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_10.jpg?raw=true)|![](https://github.com/TheAlphamerc/flutter_twitter_clone/blob/master/screenshots/Settings/screenshot_81.jpg?raw=true)|
+Deployment is not currently in use
 
+## 💻 Built with
 
+- Flutter
+- Dart
+- Android Studio
 
+## 📌 Prerequisites
 
+This app is developed under the following requirements so be sure to follow them before you get started.
 
-## Getting started
-<details>
-     <summary> Click to expand </summary>
-     
-#### 1. [Setup Flutter](https://flutter.dev/docs/get-started/install)
+- Dart SDK >=2.15.0 <3.0.0
+- Flutter SDK >=2.8.0
+- Android Gradle Plugin Version = 7.0.4
+- Gradle Version = 7.0.2
 
-#### 2. Clone the repo
+## 🍃 How to Setup
 
-```sh
-$ git https://github.com/TheAlphamerc/flutter_twitter_clone.git
-$ cd flutter_twitter_clone/
-```
+- Download or clone the repository
+- Move the project to the selected directory
+- Open it with a code editor (Android Studio, Visual Studio Code)
+- Do not run flutter clean or pub get commands until setup is complete
+- Change app package name
+- Create [PayHere Sandbox Account](https://sandbox.payhere.lk/)
 
-#### 3. Setup the firebase app
+  <a href="https://www.payhere.lk"><img src="https://www.payhere.lk/downloads/images/pay_with_payhere_light.png" alt="Pay with PayHere" width="180"/></a>
 
-1. You'll need to create a Firebase instance. Follow the instructions at https://console.firebase.google.com.
-2. Once your Firebase instance is created, you'll need to enable Google authentication.
+    PayHere Payment Options
 
-* Go to the Firebase Console for your new instance.
-* Click "Authentication" in the left-hand menu
-* Click the "sign-in method" tab
-* Click "Google" and enable it
-* Click "Email/Password" and enable it
+    <a href="https://www.payhere.lk" target="_blank"><img src="https://www.payhere.lk/downloads/images/payhere_short_banner_dark.png" alt="PayHere" width="500"/></a>
 
-3. Enable the Firebase Database
-* Go to the Firebase Console
-* Click "Database" in the left-hand menu
-* Click the Realtime "Create Database" button
-* Select "Start in test mode" and "Enable"
+    <!-- <a href="https://www.payhere.lk?utm_source=logo" target="_blank"><img src="https://www.payhere.lk/downloads/images/payhere_square_banner_dark.png" alt="PayHere"  width="400"/></a> -->
 
-4. (skip if not running on Android)
+    [🔖 PayHere Knowledge Base - Flutter SDK](https://support.payhere.lk/api-&-mobile-sdk/payhere-flutter)
 
-* Create an app within your Firebase instance for Android, with package name com.thealphamerc.flutter_twitter_clone
-* Run the following command to get your SHA-1 key:
+    [🔖 PayHere Sandbox & Testing](https://support.payhere.lk/faq/sandbox-and-testing)
 
-```
-keytool -exportcert -list -v \
--alias androiddebugkey -keystore ~/.android/debug.keystore
-```
+- Whitelist Mobile App Package Name
 
-* In the Firebase console, in the settings of your Android app, add your SHA-1 key by clicking "Add Fingerprint".
-* Follow instructions to download google-services.json
-* place `google-services.json` into `/android/app/`.
+  - Login to your PayHere Merchant Account and navigate to Settings > Domains and Credentials
+  - Click the 'Add Domain/App' button
+  - Select 'App' from the first dropdown
+  - Add your Flutter App package name (e.g. com.myapp.memyself)
+  - Copy Merchant Secret and Merchant ID of the app
 
-5. (skip if not running on iOS)
+- Create new dart file (payhere_credentials.dart) to save the merchantSecret and merchantId
 
-* Create an app within your Firebase instance for iOS, with your app package name
-* Follow instructions to download GoogleService-Info.plist
-* Open XCode, right click the Runner folder, select the "Add Files to 'Runner'" menu, and select the GoogleService-Info.plist file to add it to /ios/Runner in XCode
-* Open /ios/Runner/Info.plist in a text editor. Locate the CFBundleURLSchemes key. The second item in the array value of this key is specific to the Firebase instance. Replace it with the value for REVERSED_CLIENT_ID from GoogleService-Info.plist
+  <b><i>payhere_credentials.dart</i></b>
 
-</details>
+  ```
+  class PayHereAccountCredentials {
+      final String merchantId = "Paste YOUR MERCHANT ID";
+      final String merchantSecret = "Paste YOUR MERCHANT SECRET";
+  }
+  ```
 
+- Run flutter clean and pub get commands
 
-## Directory Structure
-<details>
-     <summary> Click to expand </summary>
-  
-```
-|-- lib
-|   |-- helper
-|   |   |-- constant.dart
-|   |   |-- customRoute.dart
-|   |   |-- enum.dart
-|   |   |-- routes.dart
-|   |   |-- theme.dart
-|   |   |-- utility.dart
-|   |   '-- validator.dart
-|   |-- main.dart
-|   |-- model
-|   |   |-- chatModel.dart
-|   |   |-- feedModel.dart
-|   |   |-- notificationModel.dart
-|   |   '-- user.dart
-|   |-- page
-|   |   |-- Auth
-|   |   |   |-- forgetPasswordPage.dart
-|   |   |   |-- selectAuthMethod.dart
-|   |   |   |-- signin.dart
-|   |   |   |-- signup.dart
-|   |   |   |-- verifyEmail.dart
-|   |   |   '-- widget
-|   |   |       '-- googleLoginButton.dart
-|   |   |-- common
-|   |   |   |-- sidebar.dart
-|   |   |   |-- splash.dart
-|   |   |   |-- usersListPage.dart
-|   |   |   '-- widget
-|   |   |       '-- userListWidget.dart
-|   |   |-- feed
-|   |   |   |-- composeTweet
-|   |   |   |   |-- composeTweet.dart
-|   |   |   |   |-- state
-|   |   |   |   |   '-- composeTweetState.dart
-|   |   |   |   '-- widget
-|   |   |   |       |-- composeBottomIconWidget.dart
-|   |   |   |       |-- composeTweetImage.dart
-|   |   |   |       '-- widgetView.dart
-|   |   |   |-- feedPage.dart
-|   |   |   |-- feedPostDetail.dart
-|   |   |   '-- imageViewPage.dart
-|   |   |-- homePage.dart
-|   |   |-- message
-|   |   |   |-- chatListPage.dart
-|   |   |   |-- chatScreenPage.dart
-|   |   |   |-- conversationInformation
-|   |   |   |   '-- conversationInformation.dart
-|   |   |   '-- newMessagePage.dart
-|   |   |-- notification
-|   |   |   '-- notificationPage.dart
-|   |   |-- profile
-|   |   |   |-- EditProfilePage.dart
-|   |   |   |-- follow
-|   |   |   |   |-- followerListPage.dart
-|   |   |   |   '-- followingListPage.dart
-|   |   |   |-- profileImageView.dart
-|   |   |   |-- profilePage.dart
-|   |   |   '-- widgets
-|   |   |       '-- tabPainter.dart
-|   |   |-- search
-|   |   |   '-- SearchPage.dart
-|   |   '-- settings
-|   |       |-- accountSettings
-|   |       |   |-- about
-|   |       |   |   '-- aboutTwitter.dart
-|   |       |   |-- accessibility
-|   |       |   |   '-- accessibility.dart
-|   |       |   |-- accountSettingsPage.dart
-|   |       |   |-- contentPrefrences
-|   |       |   |   |-- contentPreference.dart
-|   |       |   |   '-- trends
-|   |       |   |       '-- trendsPage.dart
-|   |       |   |-- dataUsage
-|   |       |   |   '-- dataUsagePage.dart
-|   |       |   |-- displaySettings
-|   |       |   |   '-- displayAndSoundPage.dart
-|   |       |   |-- notifications
-|   |       |   |   '-- notificationPage.dart
-|   |       |   |-- privacyAndSafety
-|   |       |   |   |-- directMessage
-|   |       |   |   |   '-- directMessage.dart
-|   |       |   |   '-- privacyAndSafetyPage.dart
-|   |       |   '-- proxy
-|   |       |       '-- proxyPage.dart
-|   |       |-- settingsAndPrivacyPage.dart
-|   |       '-- widgets
-|   |           |-- headerWidget.dart
-|   |           |-- settingsAppbar.dart
-|   |           '-- settingsRowWidget.dart
-|   |-- state
-|   |   |-- appState.dart
-|   |   |-- authState.dart
-|   |   |-- chats
-|   |   |   '-- chatState.dart
-|   |   |-- feedState.dart
-|   |   |-- notificationState.dart
-|   |   '-- searchState.dart
-|   '-- widgets
-|       |-- bottomMenuBar
-|       |   |-- HalfPainter.dart
-|       |   |-- bottomMenuBar.dart
-|       |   '-- tabItem.dart
-|       |-- customAppBar.dart
-|       |-- customWidgets.dart
-|       |-- newWidget
-|       |   |-- customClipper.dart
-|       |   |-- customLoader.dart
-|       |   |-- customProgressbar.dart
-|       |   |-- customUrlText.dart
-|       |   |-- emptyList.dart
-|       |   |-- rippleButton.dart
-|       |   '-- title_text.dart
-|       '-- tweet
-|           |-- tweet.dart
-|           '-- widgets
-|               |-- parentTweet.dart
-|               |-- retweetWidget.dart
-|               |-- tweetBottomSheet.dart
-|               |-- tweetIconsRow.dart
-|               |-- tweetImage.dart
-|               '-- unavailableTweet.dart
-|-- pubspec.yaml
-```
+## 🚀 How to Run
 
-</details>
+- Run flutter clean and pub get commands
+- Launch Device
+- Run on the device
+
+  <b>PayHere Sandbox & Testing Card numbers</b>
+
+  | Card Icon                                                      | Card Name  | Card Number      |
+  | :------------------------------------------------------------- | :--------- | :--------------- |
+  | ![VISA](https://img.icons8.com/color/40/000000/visa.png)       | Visa       | 4916217501611292 |
+  | ![VISA](https://img.icons8.com/color/40/000000/mastercard.png) | MasterCard | 5307732125531191 |
+  | ![VISA](https://img.icons8.com/color/40/000000/amex.png)       | AMEX       | 346781005510225  |
+
+## 📸 Icons and Images
+
+- Flutter Logo - https://logowik.com/flutter-vector-logo-5285.html
+- PayHere Images - https://support.payhere.lk/faq/payment-logos
+- Icons - https://icons8.com
+
+## 💎 Dependencies
+
+- Flutter - https://flutter.dev
+- Payhere Mobile SDK Flutter - https://pub.dev/packages/payhere_mobilesdk_flutter
+
+## 🎞️ Project Gallery
+
+Project screenshots and pictures - [Project Gallery](https://dileepabandara.github.io/project-gallery)
+
+## ❤️ Thanks
+
+Thanks to everyone who supported
+
+## 👨‍💻 Developed By
+
+Dileepa Bandara  
+©dileepabandara.dev  
+https://dileepabandara.github.io
+
+## 💬 Contact
+
+If you want to contact me, leave a message via email or Twitter
+
+- Email - <contact.dileepabandara@gmail.com>
+- Twitter - [_dileepabandara](https://twitter.com/_dileepabandara)
+
+## 📜 License
+
+This project is licensed under the MIT License  
+MIT ©dileepabandara.dev  
+See the license file for more details [LICENSE.md](https://github.com/dileepabandara/flutter_with_payhere/blob/main/LICENSE)
