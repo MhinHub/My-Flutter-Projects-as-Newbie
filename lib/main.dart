@@ -1,41 +1,48 @@
-// ignore_for_file: prefer_const_constructors
-
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:todolist/configs/theme.config.dart';
-import 'package:todolist/modules/auth/signin/signin_screen.dart';
-import 'package:todolist/modules/auth/signup/signup_screen.dart';
-import 'package:todolist/modules/category/add_category/add_category_screen.dart';
-import 'package:todolist/modules/category/update_category/update_category_screen.dart';
-import 'package:todolist/modules/home/home_screen.dart';
-import 'package:todolist/modules/task/add_task/add_task_screen.dart';
-import 'package:todolist/modules/task/task_list/task_list_screen.dart';
-import 'package:todolist/modules/task/update_task/update_task_screen.dart';
+import 'package:flutter_twitter_clone/helper/theme.dart';
+import 'package:flutter_twitter_clone/state/chats/chatUserState.dart';
+import 'package:flutter_twitter_clone/state/searchState.dart';
+import 'helper/routes.dart';
+import 'state/appState.dart';
+import 'package:provider/provider.dart';
+import 'state/authState.dart';
+import 'state/feedState.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'state/notificationState.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: themeData(context),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => SignInScreen(),
-        '/sign-up': (context) => SignUpScreen(),
-        '/home': (context) => HomeScreen(),
-        '/task-list': (context) => TaskListScreen(),
-        '/add-category': (context) => AddCategoryScreen(),
-        '/update-category': (context) => UpdateCategoryScreen(),
-        '/add-task': (context) => AddTaskScreen(),
-        '/update-task': (context) => UpdateTaskScreen(),
-      },
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<AppState>(create: (_) => AppState()),
+        ChangeNotifierProvider<AuthState>(create: (_) => AuthState()),
+        ChangeNotifierProvider<FeedState>(create: (_) => FeedState()),
+        ChangeNotifierProvider<ChatUserState>(create: (_) => ChatUserState()),
+        ChangeNotifierProvider<SearchState>(create: (_) => SearchState()),
+        ChangeNotifierProvider<NotificationState>(
+            create: (_) => NotificationState()),
+      ],
+      child: MaterialApp(
+        title: 'Fwitter',
+        theme: AppTheme.apptheme.copyWith(
+          textTheme: GoogleFonts.muliTextTheme(
+            Theme.of(context).textTheme,
+          ),
+        ),
+        debugShowCheckedModeBanner: false,
+        routes: Routes.route(),
+        onGenerateRoute: (settings) => Routes.onGenerateRoute(settings),
+        onUnknownRoute: (settings) => Routes.onUnknownRoute(settings),
+      ),
     );
   }
 }

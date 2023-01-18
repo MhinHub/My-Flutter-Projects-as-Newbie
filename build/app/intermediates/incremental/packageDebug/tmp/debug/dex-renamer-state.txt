@@ -1,4 +1,0 @@
-#Sun Mar 27 06:02:29 WITA 2022
-base.0=/media/mi/Home/Coding/_Flutter/flutter-todolist/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
